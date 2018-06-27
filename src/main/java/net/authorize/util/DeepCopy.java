@@ -14,7 +14,10 @@ import java.io.ObjectOutputStream;
  * that cannot be serialized) an error is printed to System.err and
  * null is returned. Depending on your specific application, it might
  * make more sense to have copy(...) re-throw the exception.
+ * 
+ * @deprecated Starting Release <X.X> August 2018 the Authorize.Net API has been reorganized to simplify & ease integration and to be more merchant focused. AIM, ARB, CIM, Reporting and SIM have all been deprecated in favor of AuthorizeNet::API.
  */
+@Deprecated
 public class DeepCopy {
 
     /**

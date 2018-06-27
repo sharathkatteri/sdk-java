@@ -10,8 +10,9 @@ import java.util.Map;
  *
  * This enum is leveraged across all the integrations of
  * AIM,SIM,DPM,ARB and CIM.
- *
+ * @deprecated Starting Release <X.X> August 2018 the Authorize.Net API has been reorganized to simplify & ease integration and to be more merchant focused. AIM, ARB, CIM, Reporting and SIM have all been deprecated in favor of AuthorizeNet::API.
  */
+@Deprecated
 public enum ResponseField {
 	RESPONSE_CODE(AuthNetField.X_RESPONSE_CODE.getFieldName()),
 	RESPONSE_SUBCODE(null),

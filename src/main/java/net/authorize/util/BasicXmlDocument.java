@@ -23,7 +23,10 @@ import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
 import org.xml.sax.SAXParseException;
 
-
+/**
+ * @deprecated Starting Release <X.X> August 2018 the Authorize.Net API has been reorganized to simplify & ease integration and to be more merchant focused. AIM, ARB, CIM, Reporting and SIM have all been deprecated in favor of AuthorizeNet::API.
+ */
+@Deprecated
 public class BasicXmlDocument implements Serializable {
 
 	private static final long serialVersionUID = 1L;

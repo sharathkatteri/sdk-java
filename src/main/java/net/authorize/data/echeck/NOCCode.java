@@ -4,8 +4,9 @@ package net.authorize.data.echeck;
 /**
  * ACH notice of change (NOC) codes that may be received from the customer's
  * bank in the event of a discrepancy in the bank information provided with the transaction.
- *
+ * @deprecated Starting Release <X.X> August 2018 the Authorize.Net API has been reorganized to simplify & ease integration and to be more merchant focused. AIM, ARB, CIM, Reporting and SIM have all been deprecated in favor of AuthorizeNet::API.
  */
+@Deprecated
 public enum NOCCode {
 	C01("C01", "Incorrect DFI account number", "The customer's bank account number is incorrect."),
 	C02("C02", "Incorrect routing number", "The bank's ABA routing number is incorrect."),

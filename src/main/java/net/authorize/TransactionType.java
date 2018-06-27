@@ -2,8 +2,9 @@ package net.authorize;
 
 /**
  * The credit card transaction types supported by the payment gateway.
- *
+ * @deprecated Starting Release <X.X> August 2018 the Authorize.Net API has been reorganized to simplify & ease integration and to be more merchant focused. AIM, ARB, CIM, Reporting and SIM have all been deprecated in favor of AuthorizeNet::API.
  */
+@Deprecated
 public enum TransactionType {
 	AUTH_CAPTURE("AUTH_CAPTURE", "profileTransAuthCapture"),
 	AUTH_ONLY("AUTH_ONLY", "profileTransAuthOnly"),

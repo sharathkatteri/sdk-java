@@ -11,7 +11,9 @@ import java.io.Serializable;
  * PPD - Prearranged Payment and Deposit Entry
  * TEL - Telephone-Initiated Entry
  * WEB - Internet-Initiated Entry
+ * @deprecated Starting Release <X.X> August 2018 the Authorize.Net API has been reorganized to simplify & ease integration and to be more merchant focused. AIM, ARB, CIM, Reporting and SIM have all been deprecated in favor of AuthorizeNet::API.
  */
+@Deprecated
 public enum ECheckType implements Serializable {
 	ARC("ARC"),
 	BOC("BOC"),

@@ -14,8 +14,10 @@ import net.authorize.util.HttpClient;
  *
  * The Merchant is also responsible for creating transactions and
  * posting them to the gateway are performed through the Merchant.
- *
+ * 
+ * @deprecated Starting Release <X.X> August 2018 the Authorize.Net API has been reorganized to simplify & ease integration and to be more merchant focused. AIM, ARB, CIM, Reporting and SIM have all been deprecated in favor of AuthorizeNet::API.
  */
+@Deprecated
 public class Merchant implements Serializable {
 
 	/**
@@ -203,6 +205,7 @@ public class Merchant implements Serializable {
 	 *
 	 * @return A newly created Transaction will be returned.
 	 */
+	@Deprecated
 	public net.authorize.aim.Transaction createAIMTransaction(TransactionType transactionType,
 			BigDecimal amount) {
 		return net.authorize.aim.Transaction.createTransaction(this, transactionType, amount);
@@ -217,6 +220,7 @@ public class Merchant implements Serializable {
 	 *
 	 * @return A newly created Transaction will be returned.
 	 */
+	@Deprecated
 	public net.authorize.sim.Transaction createSIMTransaction(TransactionType transactionType,
 			 long fingerPrintSequence, BigDecimal amount) {
 
@@ -231,6 +235,7 @@ public class Merchant implements Serializable {
 	 *
 	 * @return A newly created Transaction will be returned.
 	 */
+	@Deprecated
 	public net.authorize.arb.Transaction createARBTransaction(net.authorize.arb.TransactionType transactionType, Subscription subscription) {
 
 		return net.authorize.arb.Transaction.createTransaction(this, transactionType, subscription);
@@ -243,6 +248,7 @@ public class Merchant implements Serializable {
 	 *
 	 * @return A newly created Transaction will be returned.
 	 */
+	@Deprecated
 	public net.authorize.cim.Transaction createCIMTransaction(net.authorize.cim.TransactionType transactionType) {
 
 		return net.authorize.cim.Transaction.createTransaction(this, transactionType);
@@ -255,6 +261,7 @@ public class Merchant implements Serializable {
 	 *
 	 * @return A newly created Transaction will be returned.
 	 */
+	@Deprecated
 	public net.authorize.reporting.Transaction createReportingTransaction(net.authorize.reporting.TransactionType transactionType) {
 
 		return net.authorize.reporting.Transaction.createTransaction(this, transactionType);
@@ -268,6 +275,7 @@ public class Merchant implements Serializable {
 	 * @return Result is returned with each post.
 	 *
 	 */
+	@Deprecated
 	public net.authorize.Result<?> postTransaction(Transaction transaction) {
 
 		Result<Transaction> result = null;

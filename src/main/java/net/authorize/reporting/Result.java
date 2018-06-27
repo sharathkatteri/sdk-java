@@ -40,8 +40,9 @@ import org.w3c.dom.NodeList;
 
 /**
  * Reporting specific templated wrapper container for passing back the result from the request gateway.
- *
+ * @deprecated Starting Release <X.X> August 2018 the Authorize.Net API has been reorganized to simplify & ease integration and to be more merchant focused. AIM, ARB, CIM, Reporting and SIM have all been deprecated in favor of AuthorizeNet::API.
  */
+@Deprecated
 public class Result<T> extends net.authorize.xml.Result<T> {
 
 	private static final long serialVersionUID = 1L;

@@ -11,7 +11,9 @@ import org.apache.commons.logging.LogFactory;
 
 /**
 * Solution container for Solution-Type.
+* @deprecated Starting Release <X.X> August 2018 the Authorize.Net API has been reorganized to simplify & ease integration and to be more merchant focused. AIM, ARB, CIM, Reporting and SIM have all been deprecated in favor of AuthorizeNet::API.
 */
+@Deprecated
 @XmlRootElement
 public class Solution implements Serializable{
 	private static final long serialVersionUID = 1L;

@@ -6,8 +6,9 @@ import net.authorize.sim.LinkMethod;
  * The hosted receipt page provides the customer with the status of their transaction and can include a
  * link back to the merchant's website. It can be customized to reflect the look and feel of the
  * merchant's website.
- *
+ * @deprecated Starting Release <X.X> August 2018 the Authorize.Net API has been reorganized to simplify & ease integration and to be more merchant focused. AIM, ARB, CIM, Reporting and SIM have all been deprecated in favor of AuthorizeNet::API.
  */
+@Deprecated
 public class HostedReceiptPageSettings {
 	private LinkMethod linkMethod;
 	private String linkText;
